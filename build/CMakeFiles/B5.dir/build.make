@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sb16165/Documents/Geant/MPAGS-EPPT-B5
+CMAKE_SOURCE_DIR = /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sb16165/Documents/Geant/build
+CMAKE_BINARY_DIR = /home/sb16165/Documents/EPPT/build
 
 # Utility rule file for B5.
 
@@ -71,6 +71,6 @@ CMakeFiles/B5.dir/clean:
 .PHONY : CMakeFiles/B5.dir/clean
 
 CMakeFiles/B5.dir/depend:
-	cd /home/sb16165/Documents/Geant/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sb16165/Documents/Geant/MPAGS-EPPT-B5 /home/sb16165/Documents/Geant/MPAGS-EPPT-B5 /home/sb16165/Documents/Geant/build /home/sb16165/Documents/Geant/build /home/sb16165/Documents/Geant/build/CMakeFiles/B5.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sb16165/Documents/EPPT/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5 /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5 /home/sb16165/Documents/EPPT/build /home/sb16165/Documents/EPPT/build /home/sb16165/Documents/EPPT/build/CMakeFiles/B5.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/B5.dir/depend
 

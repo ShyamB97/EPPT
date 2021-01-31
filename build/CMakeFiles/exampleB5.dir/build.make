@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sb16165/Documents/Geant/MPAGS-EPPT-B5
+CMAKE_SOURCE_DIR = /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sb16165/Documents/Geant/build
+CMAKE_BINARY_DIR = /home/sb16165/Documents/EPPT/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/exampleB5.dir/depend.make
@@ -58,212 +58,212 @@ include CMakeFiles/exampleB5.dir/progress.make
 include CMakeFiles/exampleB5.dir/flags.make
 
 CMakeFiles/exampleB5.dir/exampleB5.cc.o: CMakeFiles/exampleB5.dir/flags.make
-CMakeFiles/exampleB5.dir/exampleB5.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/exampleB5.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/Geant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exampleB5.dir/exampleB5.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/exampleB5.cc.o -c /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/exampleB5.cc
+CMakeFiles/exampleB5.dir/exampleB5.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/exampleB5.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/EPPT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exampleB5.dir/exampleB5.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/exampleB5.cc.o -c /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/exampleB5.cc
 
 CMakeFiles/exampleB5.dir/exampleB5.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB5.dir/exampleB5.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/exampleB5.cc > CMakeFiles/exampleB5.dir/exampleB5.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/exampleB5.cc > CMakeFiles/exampleB5.dir/exampleB5.cc.i
 
 CMakeFiles/exampleB5.dir/exampleB5.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB5.dir/exampleB5.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/exampleB5.cc -o CMakeFiles/exampleB5.dir/exampleB5.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/exampleB5.cc -o CMakeFiles/exampleB5.dir/exampleB5.cc.s
 
 CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o: CMakeFiles/exampleB5.dir/flags.make
-CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5ActionInitialization.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/Geant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o -c /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5ActionInitialization.cc
+CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5ActionInitialization.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/EPPT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o -c /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5ActionInitialization.cc
 
 CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5ActionInitialization.cc > CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5ActionInitialization.cc > CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.i
 
 CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5ActionInitialization.cc -o CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5ActionInitialization.cc -o CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.s
 
 CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.o: CMakeFiles/exampleB5.dir/flags.make
-CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5CellParameterisation.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/Geant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.o -c /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5CellParameterisation.cc
+CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5CellParameterisation.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/EPPT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.o -c /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5CellParameterisation.cc
 
 CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5CellParameterisation.cc > CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5CellParameterisation.cc > CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.i
 
 CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5CellParameterisation.cc -o CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5CellParameterisation.cc -o CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.s
 
 CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: CMakeFiles/exampleB5.dir/flags.make
-CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5DetectorConstruction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/Geant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o -c /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5DetectorConstruction.cc
+CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5DetectorConstruction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/EPPT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o -c /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5DetectorConstruction.cc
 
 CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5DetectorConstruction.cc > CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5DetectorConstruction.cc > CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.i
 
 CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5DetectorConstruction.cc -o CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5DetectorConstruction.cc -o CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.s
 
 CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.o: CMakeFiles/exampleB5.dir/flags.make
-CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5DriftChamberHit.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/Geant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.o -c /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5DriftChamberHit.cc
+CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5DriftChamberHit.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/EPPT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.o -c /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5DriftChamberHit.cc
 
 CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5DriftChamberHit.cc > CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5DriftChamberHit.cc > CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.i
 
 CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5DriftChamberHit.cc -o CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5DriftChamberHit.cc -o CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.s
 
 CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.o: CMakeFiles/exampleB5.dir/flags.make
-CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5DriftChamberSD.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/Geant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.o -c /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5DriftChamberSD.cc
+CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5DriftChamberSD.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/EPPT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.o -c /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5DriftChamberSD.cc
 
 CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5DriftChamberSD.cc > CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5DriftChamberSD.cc > CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.i
 
 CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5DriftChamberSD.cc -o CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5DriftChamberSD.cc -o CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.s
 
 CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.o: CMakeFiles/exampleB5.dir/flags.make
-CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5EmCalorimeterHit.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/Geant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.o -c /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5EmCalorimeterHit.cc
+CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5EmCalorimeterHit.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/EPPT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.o -c /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5EmCalorimeterHit.cc
 
 CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5EmCalorimeterHit.cc > CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5EmCalorimeterHit.cc > CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.i
 
 CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5EmCalorimeterHit.cc -o CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5EmCalorimeterHit.cc -o CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.s
 
 CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o: CMakeFiles/exampleB5.dir/flags.make
-CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5EmCalorimeterSD.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/Geant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o -c /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5EmCalorimeterSD.cc
+CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5EmCalorimeterSD.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/EPPT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o -c /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5EmCalorimeterSD.cc
 
 CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5EmCalorimeterSD.cc > CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5EmCalorimeterSD.cc > CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.i
 
 CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5EmCalorimeterSD.cc -o CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5EmCalorimeterSD.cc -o CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.s
 
 CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: CMakeFiles/exampleB5.dir/flags.make
-CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5EventAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/Geant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o -c /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5EventAction.cc
+CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5EventAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/EPPT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o -c /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5EventAction.cc
 
 CMakeFiles/exampleB5.dir/src/B5EventAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB5.dir/src/B5EventAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5EventAction.cc > CMakeFiles/exampleB5.dir/src/B5EventAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5EventAction.cc > CMakeFiles/exampleB5.dir/src/B5EventAction.cc.i
 
 CMakeFiles/exampleB5.dir/src/B5EventAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB5.dir/src/B5EventAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5EventAction.cc -o CMakeFiles/exampleB5.dir/src/B5EventAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5EventAction.cc -o CMakeFiles/exampleB5.dir/src/B5EventAction.cc.s
 
 CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.o: CMakeFiles/exampleB5.dir/flags.make
-CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5HadCalorimeterHit.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/Geant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.o -c /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5HadCalorimeterHit.cc
+CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5HadCalorimeterHit.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/EPPT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.o -c /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5HadCalorimeterHit.cc
 
 CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5HadCalorimeterHit.cc > CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5HadCalorimeterHit.cc > CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.i
 
 CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5HadCalorimeterHit.cc -o CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5HadCalorimeterHit.cc -o CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.s
 
 CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o: CMakeFiles/exampleB5.dir/flags.make
-CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5HadCalorimeterSD.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/Geant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o -c /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5HadCalorimeterSD.cc
+CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5HadCalorimeterSD.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/EPPT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o -c /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5HadCalorimeterSD.cc
 
 CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5HadCalorimeterSD.cc > CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5HadCalorimeterSD.cc > CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.i
 
 CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5HadCalorimeterSD.cc -o CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5HadCalorimeterSD.cc -o CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.s
 
 CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.o: CMakeFiles/exampleB5.dir/flags.make
-CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5HodoscopeHit.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/Geant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.o -c /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5HodoscopeHit.cc
+CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5HodoscopeHit.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/EPPT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.o -c /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5HodoscopeHit.cc
 
 CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5HodoscopeHit.cc > CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5HodoscopeHit.cc > CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.i
 
 CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5HodoscopeHit.cc -o CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5HodoscopeHit.cc -o CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.s
 
 CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.o: CMakeFiles/exampleB5.dir/flags.make
-CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5HodoscopeSD.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/Geant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.o -c /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5HodoscopeSD.cc
+CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5HodoscopeSD.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/EPPT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.o -c /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5HodoscopeSD.cc
 
 CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5HodoscopeSD.cc > CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5HodoscopeSD.cc > CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.i
 
 CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5HodoscopeSD.cc -o CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5HodoscopeSD.cc -o CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.s
 
 CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.o: CMakeFiles/exampleB5.dir/flags.make
-CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5MagneticField.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/Geant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.o -c /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5MagneticField.cc
+CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5MagneticField.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/EPPT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.o -c /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5MagneticField.cc
 
 CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5MagneticField.cc > CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5MagneticField.cc > CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.i
 
 CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5MagneticField.cc -o CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5MagneticField.cc -o CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.s
 
 CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.o: CMakeFiles/exampleB5.dir/flags.make
-CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5PrimaryGeneratorAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/Geant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.o -c /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5PrimaryGeneratorAction.cc
+CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5PrimaryGeneratorAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/EPPT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.o -c /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5PrimaryGeneratorAction.cc
 
 CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5PrimaryGeneratorAction.cc > CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5PrimaryGeneratorAction.cc > CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.i
 
 CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5PrimaryGeneratorAction.cc -o CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5PrimaryGeneratorAction.cc -o CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.s
 
 CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o: CMakeFiles/exampleB5.dir/flags.make
-CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5RunAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/Geant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o -c /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5RunAction.cc
+CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5RunAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb16165/Documents/EPPT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o -c /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5RunAction.cc
 
 CMakeFiles/exampleB5.dir/src/B5RunAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB5.dir/src/B5RunAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5RunAction.cc > CMakeFiles/exampleB5.dir/src/B5RunAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5RunAction.cc > CMakeFiles/exampleB5.dir/src/B5RunAction.cc.i
 
 CMakeFiles/exampleB5.dir/src/B5RunAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB5.dir/src/B5RunAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5RunAction.cc -o CMakeFiles/exampleB5.dir/src/B5RunAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5RunAction.cc -o CMakeFiles/exampleB5.dir/src/B5RunAction.cc.s
 
 # Object files for target exampleB5
 exampleB5_OBJECTS = \
@@ -333,12 +333,13 @@ exampleB5: /usr/lib/x86_64-linux-gnu/libXt.so
 exampleB5: /usr/lib/x86_64-linux-gnu/libICE.so
 exampleB5: /usr/lib/x86_64-linux-gnu/libSM.so
 exampleB5: /usr/lib/x86_64-linux-gnu/libX11.so
+exampleB5: /usr/local/lib/libxerces-c.so
 exampleB5: /home/sb16165/Applications/geant4/lib/libG4run.so
 exampleB5: /home/sb16165/Applications/geant4/lib/libG4event.so
 exampleB5: /home/sb16165/Applications/geant4/lib/libG4tracking.so
 exampleB5: /home/sb16165/Applications/geant4/lib/libG4processes.so
 exampleB5: /home/sb16165/Applications/geant4/lib/libG4analysis.so
-exampleB5: /usr/lib/x86_64-linux-gnu/libexpat.so
+exampleB5: /home/sb16165/Applications/geant4/lib/libG4expat.so
 exampleB5: /home/sb16165/Applications/geant4/lib/libG4digits_hits.so
 exampleB5: /home/sb16165/Applications/geant4/lib/libG4track.so
 exampleB5: /home/sb16165/Applications/geant4/lib/libG4particles.so
@@ -351,7 +352,7 @@ exampleB5: /home/sb16165/Applications/geant4/lib/libG4global.so
 exampleB5: /home/sb16165/Applications/geant4/lib/libG4clhep.so
 exampleB5: /home/sb16165/Applications/geant4/lib/libG4ptl.so.0.0.2
 exampleB5: CMakeFiles/exampleB5.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sb16165/Documents/Geant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable exampleB5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sb16165/Documents/EPPT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable exampleB5"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/exampleB5.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -364,6 +365,6 @@ CMakeFiles/exampleB5.dir/clean:
 .PHONY : CMakeFiles/exampleB5.dir/clean
 
 CMakeFiles/exampleB5.dir/depend:
-	cd /home/sb16165/Documents/Geant/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sb16165/Documents/Geant/MPAGS-EPPT-B5 /home/sb16165/Documents/Geant/MPAGS-EPPT-B5 /home/sb16165/Documents/Geant/build /home/sb16165/Documents/Geant/build /home/sb16165/Documents/Geant/build/CMakeFiles/exampleB5.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sb16165/Documents/EPPT/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5 /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5 /home/sb16165/Documents/EPPT/build /home/sb16165/Documents/EPPT/build /home/sb16165/Documents/EPPT/build/CMakeFiles/exampleB5.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/exampleB5.dir/depend
 

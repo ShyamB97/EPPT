@@ -4,40 +4,27 @@
 Created on Fri Jan 22 15:43:11 2021
 
 @author: sb16165
+
+Main script, will act somewhat like an analyser module in lArsoft.
 """
-import uproot
+
 import numpy as np
-import os
 import matplotlib.pyplot as plt
-import matplotlib
+
+import Master
 
 """Opening ROOT file"""
-file = uproot.open("out_3_b.root")
-tree = file['B5']
 
-EC_Energy = tree.arrays(library="np")['ECEnergy']
-HC_Energy = tree.arrays(library="np")['HCEnergy']
+d = Master.data("out_1.root")
 
-EC_EnergyVector = tree.arrays(library="np")['ECEnergyVector']
-HC_EnergyVector = tree.arrays(library="np")['HCEnergyVector']
-
-DC1_hitX = tree.arrays(library="np")['Dc1HitsVector_x']
-DC1_hitY = tree.arrays(library="np")['Dc1HitsVector_y']
-DC1_hitZ = tree.arrays(library="np")['Dc1HitsVector_z']
-
-DC2_hitX = tree.arrays(library="np")['Dc2HitsVector_x']
-DC2_hitY = tree.arrays(library="np")['Dc2HitsVector_y']
-DC2_hitZ = tree.arrays(library="np")['Dc2HitsVector_z']
-
-
-
-""" Global constants"""
+""" Global constants (Outdated)"""
 z = 5 + 5 + 0.3 - 0.3 # distance between Drift chambers
 B = 0.5 # magnetic field in Telsa
 q = 1.6E-19  # charge of the particle in Coulombs
 xPres = 1E-4  # precision of x Position in meters
-nEvents = len(HC_Energy)
+nEvents = len(d.E_Hadron)
 
+### OUTDATED ###
 def MomentumCalculation(hits1, hits2):
     """
     Calculates momentum by finding how much the particle bends in the magnetic field.
@@ -68,6 +55,7 @@ def MomentumCalculation(hits1, hits2):
 
     return p, sig_p
 
+### OUTDATED ###
 def RadiusUncertainty(x, l, sig_x = xPres):
     """
     Calculates the uncertainty in defleciton redius r.
@@ -81,11 +69,11 @@ def RadiusUncertainty(x, l, sig_x = xPres):
     return sig_x * np.sqrt( (z/x) * ( ( 2*(l**2 - 9.6**2) + (1/16) * (l/x)**2 ) ) )  # see notes
 
 
-
+"""
 momenta = []
 resolution = []
 for i in range(nEvents):
-    p, sig_p = MomentumCalculation(DC1_hitX[i], DC2_hitX[i])
+    p, sig_p = MomentumCalculation(d.DC1_Hits.x[i] , d.DC2_Hits.x[i])
     momenta.append(p)
     resolution.append(sig_p)
 
@@ -107,7 +95,7 @@ for i in range(len(resolution)):
 
 print("mean Momentum (GeV): " + str(np.mean(momenta)) + " +- " + str(np.std(momenta)/nEvents) )
 print("mean Resolution (GeV): " + str(np.mean(resolution)) + " +- " + str(np.std(resolution)/nEvents) )
-
+"""
 
 """
 DepositedEnergy = (HC_Energy + EC_Energy) / 1000 # GeV

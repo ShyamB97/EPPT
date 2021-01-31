@@ -345,9 +345,9 @@ CMakeFiles/exampleB5.dir/exampleB5.cc.o: /home/sb16165/Applications/geant4/inclu
 CMakeFiles/exampleB5.dir/exampleB5.cc.o: /home/sb16165/Applications/geant4/include/PTL/Globals.hh
 CMakeFiles/exampleB5.dir/exampleB5.cc.o: /home/sb16165/Applications/geant4/include/PTL/Types.hh
 CMakeFiles/exampleB5.dir/exampleB5.cc.o: /home/sb16165/Applications/geant4/include/PTL/Utility.hh
-CMakeFiles/exampleB5.dir/exampleB5.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/exampleB5.cc
-CMakeFiles/exampleB5.dir/exampleB5.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5ActionInitialization.hh
-CMakeFiles/exampleB5.dir/exampleB5.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5DetectorConstruction.hh
+CMakeFiles/exampleB5.dir/exampleB5.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/exampleB5.cc
+CMakeFiles/exampleB5.dir/exampleB5.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5ActionInitialization.hh
+CMakeFiles/exampleB5.dir/exampleB5.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5DetectorConstruction.hh
 
 CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o: /home/sb16165/Applications/geant4/include/Geant4/G4EnvironmentUtils.hh
 CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o: /home/sb16165/Applications/geant4/include/Geant4/G4Exception.hh
@@ -365,11 +365,11 @@ CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o: /home/sb16165/Applicat
 CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o: /home/sb16165/Applications/geant4/include/Geant4/globals.hh
 CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o: /home/sb16165/Applications/geant4/include/Geant4/templates.hh
 CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o: /home/sb16165/Applications/geant4/include/Geant4/tls.hh
-CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5ActionInitialization.hh
-CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5EventAction.hh
-CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5PrimaryGeneratorAction.hh
-CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5RunAction.hh
-CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5ActionInitialization.cc
+CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5ActionInitialization.hh
+CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5EventAction.hh
+CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5PrimaryGeneratorAction.hh
+CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5RunAction.hh
+CMakeFiles/exampleB5.dir/src/B5ActionInitialization.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5ActionInitialization.cc
 
 CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Units/PhysicalConstants.h
 CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Units/SystemOfUnits.h
@@ -414,9 +414,9 @@ CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.o: /home/sb16165/Applicat
 CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.o: /home/sb16165/Applications/geant4/include/Geant4/globals.hh
 CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.o: /home/sb16165/Applications/geant4/include/Geant4/templates.hh
 CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.o: /home/sb16165/Applications/geant4/include/Geant4/tls.hh
-CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5CellParameterisation.hh
-CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5Constants.hh
-CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5CellParameterisation.cc
+CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5CellParameterisation.hh
+CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5Constants.hh
+CMakeFiles/exampleB5.dir/src/B5CellParameterisation.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5CellParameterisation.cc
 
 CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Geometry/Normal3D.h
@@ -734,19 +734,19 @@ CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Applicat
 CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Applications/geant4/include/PTL/Globals.hh
 CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Applications/geant4/include/PTL/Types.hh
 CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Applications/geant4/include/PTL/Utility.hh
-CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5CellParameterisation.hh
-CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5Constants.hh
-CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5DetectorConstruction.hh
-CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5DriftChamberHit.hh
-CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5DriftChamberSD.hh
-CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5EmCalorimeterHit.hh
-CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5EmCalorimeterSD.hh
-CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5HadCalorimeterHit.hh
-CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5HadCalorimeterSD.hh
-CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5HodoscopeHit.hh
-CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5HodoscopeSD.hh
-CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5MagneticField.hh
-CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5DetectorConstruction.cc
+CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5CellParameterisation.hh
+CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5Constants.hh
+CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5DetectorConstruction.hh
+CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5DriftChamberHit.hh
+CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5DriftChamberSD.hh
+CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5EmCalorimeterHit.hh
+CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5EmCalorimeterSD.hh
+CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5HadCalorimeterHit.hh
+CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5HadCalorimeterSD.hh
+CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5HodoscopeHit.hh
+CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5HodoscopeSD.hh
+CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5MagneticField.hh
+CMakeFiles/exampleB5.dir/src/B5DetectorConstruction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5DetectorConstruction.cc
 
 CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Geometry/Normal3D.h
@@ -827,8 +827,8 @@ CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.o: /home/sb16165/Applications/
 CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.o: /home/sb16165/Applications/geant4/include/Geant4/graphics_reps_defs.hh
 CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.o: /home/sb16165/Applications/geant4/include/Geant4/templates.hh
 CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.o: /home/sb16165/Applications/geant4/include/Geant4/tls.hh
-CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5DriftChamberHit.hh
-CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5DriftChamberHit.cc
+CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5DriftChamberHit.hh
+CMakeFiles/exampleB5.dir/src/B5DriftChamberHit.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5DriftChamberHit.cc
 
 CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Geometry/Normal3D.h
@@ -960,9 +960,9 @@ CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.o: /home/sb16165/Applications/g
 CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.o: /home/sb16165/Applications/geant4/include/PTL/Globals.hh
 CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.o: /home/sb16165/Applications/geant4/include/PTL/Types.hh
 CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.o: /home/sb16165/Applications/geant4/include/PTL/Utility.hh
-CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5DriftChamberHit.hh
-CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5DriftChamberSD.hh
-CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5DriftChamberSD.cc
+CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5DriftChamberHit.hh
+CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5DriftChamberSD.hh
+CMakeFiles/exampleB5.dir/src/B5DriftChamberSD.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5DriftChamberSD.cc
 
 CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Geometry/Normal3D.h
@@ -1037,8 +1037,8 @@ CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.o: /home/sb16165/Applications
 CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.o: /home/sb16165/Applications/geant4/include/Geant4/graphics_reps_defs.hh
 CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.o: /home/sb16165/Applications/geant4/include/Geant4/templates.hh
 CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.o: /home/sb16165/Applications/geant4/include/Geant4/tls.hh
-CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5EmCalorimeterHit.hh
-CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5EmCalorimeterHit.cc
+CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5EmCalorimeterHit.hh
+CMakeFiles/exampleB5.dir/src/B5EmCalorimeterHit.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5EmCalorimeterHit.cc
 
 CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Geometry/Normal3D.h
@@ -1170,10 +1170,10 @@ CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o: /home/sb16165/Applications/
 CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o: /home/sb16165/Applications/geant4/include/PTL/Globals.hh
 CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o: /home/sb16165/Applications/geant4/include/PTL/Types.hh
 CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o: /home/sb16165/Applications/geant4/include/PTL/Utility.hh
-CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5Constants.hh
-CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5EmCalorimeterHit.hh
-CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5EmCalorimeterSD.hh
-CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5EmCalorimeterSD.cc
+CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5Constants.hh
+CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5EmCalorimeterHit.hh
+CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5EmCalorimeterSD.hh
+CMakeFiles/exampleB5.dir/src/B5EmCalorimeterSD.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5EmCalorimeterSD.cc
 
 CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Geometry/Normal3D.h
@@ -1597,14 +1597,14 @@ CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Applications/gean
 CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Applications/geant4/include/PTL/Globals.hh
 CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Applications/geant4/include/PTL/Types.hh
 CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Applications/geant4/include/PTL/Utility.hh
-CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5Analysis.hh
-CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5Constants.hh
-CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5DriftChamberHit.hh
-CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5EmCalorimeterHit.hh
-CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5EventAction.hh
-CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5HadCalorimeterHit.hh
-CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5HodoscopeHit.hh
-CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5EventAction.cc
+CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5Analysis.hh
+CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5Constants.hh
+CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5DriftChamberHit.hh
+CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5EmCalorimeterHit.hh
+CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5EventAction.hh
+CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5HadCalorimeterHit.hh
+CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5HodoscopeHit.hh
+CMakeFiles/exampleB5.dir/src/B5EventAction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5EventAction.cc
 
 CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Geometry/Normal3D.h
@@ -1706,9 +1706,9 @@ CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.o: /home/sb16165/Application
 CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.o: /home/sb16165/Applications/geant4/include/Geant4/graphics_reps_defs.hh
 CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.o: /home/sb16165/Applications/geant4/include/Geant4/templates.hh
 CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.o: /home/sb16165/Applications/geant4/include/Geant4/tls.hh
-CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5DetectorConstruction.hh
-CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5HadCalorimeterHit.hh
-CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5HadCalorimeterHit.cc
+CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5DetectorConstruction.hh
+CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5HadCalorimeterHit.hh
+CMakeFiles/exampleB5.dir/src/B5HadCalorimeterHit.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5HadCalorimeterHit.cc
 
 CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Geometry/Normal3D.h
@@ -1840,10 +1840,10 @@ CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o: /home/sb16165/Applications
 CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o: /home/sb16165/Applications/geant4/include/PTL/Globals.hh
 CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o: /home/sb16165/Applications/geant4/include/PTL/Types.hh
 CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o: /home/sb16165/Applications/geant4/include/PTL/Utility.hh
-CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5Constants.hh
-CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5HadCalorimeterHit.hh
-CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5HadCalorimeterSD.hh
-CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5HadCalorimeterSD.cc
+CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5Constants.hh
+CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5HadCalorimeterHit.hh
+CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5HadCalorimeterSD.hh
+CMakeFiles/exampleB5.dir/src/B5HadCalorimeterSD.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5HadCalorimeterSD.cc
 
 CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Geometry/Normal3D.h
@@ -1924,8 +1924,8 @@ CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.o: /home/sb16165/Applications/gea
 CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.o: /home/sb16165/Applications/geant4/include/Geant4/graphics_reps_defs.hh
 CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.o: /home/sb16165/Applications/geant4/include/Geant4/templates.hh
 CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.o: /home/sb16165/Applications/geant4/include/Geant4/tls.hh
-CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5HodoscopeHit.hh
-CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5HodoscopeHit.cc
+CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5HodoscopeHit.hh
+CMakeFiles/exampleB5.dir/src/B5HodoscopeHit.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5HodoscopeHit.cc
 
 CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Geometry/Normal3D.h
@@ -2057,9 +2057,9 @@ CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.o: /home/sb16165/Applications/gean
 CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.o: /home/sb16165/Applications/geant4/include/PTL/Globals.hh
 CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.o: /home/sb16165/Applications/geant4/include/PTL/Types.hh
 CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.o: /home/sb16165/Applications/geant4/include/PTL/Utility.hh
-CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5HodoscopeHit.hh
-CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5HodoscopeSD.hh
-CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5HodoscopeSD.cc
+CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5HodoscopeHit.hh
+CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5HodoscopeSD.hh
+CMakeFiles/exampleB5.dir/src/B5HodoscopeSD.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5HodoscopeSD.cc
 
 CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Units/SystemOfUnits.h
 CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Utility/defs.h
@@ -2090,8 +2090,8 @@ CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.o: /home/sb16165/Applications/ge
 CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.o: /home/sb16165/Applications/geant4/include/Geant4/globals.hh
 CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.o: /home/sb16165/Applications/geant4/include/Geant4/templates.hh
 CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.o: /home/sb16165/Applications/geant4/include/Geant4/tls.hh
-CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5MagneticField.hh
-CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5MagneticField.cc
+CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5MagneticField.hh
+CMakeFiles/exampleB5.dir/src/B5MagneticField.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5MagneticField.cc
 
 CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Random/DualRand.h
 CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Random/JamesRandom.h
@@ -2198,8 +2198,8 @@ CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.o: /home/sb16165/Applic
 CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.o: /home/sb16165/Applications/geant4/include/PTL/Globals.hh
 CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.o: /home/sb16165/Applications/geant4/include/PTL/Types.hh
 CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.o: /home/sb16165/Applications/geant4/include/PTL/Utility.hh
-CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5PrimaryGeneratorAction.hh
-CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5PrimaryGeneratorAction.cc
+CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5PrimaryGeneratorAction.hh
+CMakeFiles/exampleB5.dir/src/B5PrimaryGeneratorAction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5PrimaryGeneratorAction.cc
 
 CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Units/SystemOfUnits.h
 CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o: /home/sb16165/Applications/geant4/include/Geant4/CLHEP/Utility/defs.h
@@ -2392,8 +2392,8 @@ CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o: /home/sb16165/Applications/geant4
 CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o: /home/sb16165/Applications/geant4/include/PTL/Globals.hh
 CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o: /home/sb16165/Applications/geant4/include/PTL/Types.hh
 CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o: /home/sb16165/Applications/geant4/include/PTL/Utility.hh
-CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5Analysis.hh
-CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5EventAction.hh
-CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/include/B5RunAction.hh
-CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o: /home/sb16165/Documents/Geant/MPAGS-EPPT-B5/src/B5RunAction.cc
+CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5Analysis.hh
+CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5EventAction.hh
+CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/include/B5RunAction.hh
+CMakeFiles/exampleB5.dir/src/B5RunAction.cc.o: /home/sb16165/Documents/EPPT/MPAGS-EPPT-B5/src/B5RunAction.cc
 
