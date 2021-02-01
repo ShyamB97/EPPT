@@ -12,17 +12,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 import Master
+import Tracker
 
-"""Opening ROOT file"""
 
-d = Master.data("out_1.root")
-
-""" Global constants (Outdated)"""
+### OUTDATED ###
 z = 5 + 5 + 0.3 - 0.3 # distance between Drift chambers
 B = 0.5 # magnetic field in Telsa
 q = 1.6E-19  # charge of the particle in Coulombs
 xPres = 1E-4  # precision of x Position in meters
-nEvents = len(d.E_Hadron)
+nEvents = 1000
 
 ### OUTDATED ###
 def MomentumCalculation(hits1, hits2):
@@ -67,6 +65,26 @@ def RadiusUncertainty(x, l, sig_x = xPres):
     --------------------
     """
     return sig_x * np.sqrt( (z/x) * ( ( 2*(l**2 - 9.6**2) + (1/16) * (l/x)**2 ) ) )  # see notes
+
+
+
+data = Master.data("out_1.root")
+geometry = Master.Geometry() # get detector geometry info
+
+# get drift chamber hits
+hits_1 = data.DC1_Hits
+hits_2 = data.DC2_Hits
+
+# calculate the particle momentum for each event
+r = Tracker.BendingRadius(hits_1, hits_2, geometry)
+p = Tracker.Momentum(1.6E-19, geometry.B, r)
+print(np.mean(p))
+
+cutoff = 1000 # momentum value to cutoff, likely due to poor tracking
+p = p[p < 1000]
+
+plt.hist(p, bins=50)
+
 
 
 """

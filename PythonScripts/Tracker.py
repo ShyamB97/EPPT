@@ -74,13 +74,14 @@ def TrackDirection(hits, dc):
     return reverse * np.array(norms)
 
 
-def ArcPointX(hits, dirs, dist, dc):
+def ArcPointX(hits, dirs, dist, xWidth, dc):
     """
     Gets the start or end of the arc depending on the drift chamber number.
     ---- Parameters ----
     hits    : hits from drift chamber
     dirs    : hit direciton (2D)
     dist    : distance from drift chamber to magnet
+    xWidth  : size of the x wire plane
     dc      : drift chamber number, 1 or 2
     point   : if dc is 2, then the dirction needs to be reversed
     h       : x distancde from center of the geometry
@@ -96,7 +97,7 @@ def ArcPointX(hits, dirs, dist, dc):
     h = []
     for i in range(len(dirs)):
         x = hits.x[i]
-        h.append((dirs[i][0] * dist) + x[point])
+        h.append((dirs[i][0] * dist) + (xWidth/2) * x[point])
     return np.array(h)
 
 
@@ -127,8 +128,9 @@ def BendingRadius(hits_1, hits_2, geometry):
     dirs_1 = TrackDirection(hits_1, 1)
     dirs_2 = TrackDirection(hits_2, 2)
 
-    h_1 = ArcPointX(hits_1, dirs_1, d_1, 1)
-    h_2 = ArcPointX(hits_2, dirs_2, d_2, 2)
+
+    h_1 = ArcPointX(hits_1, dirs_1, d_1, geometry.wirePlane1Size.x, 1)
+    h_2 = ArcPointX(hits_2, dirs_2, d_2, geometry.wirePlane2Size.x, 2)
 
     dirs_1 = dirs_1.reshape(len(dirs_1), 2)
     dirs_2 = dirs_2.reshape(len(dirs_2), 2)
@@ -138,12 +140,29 @@ def BendingRadius(hits_1, hits_2, geometry):
 
     return arcDist / (2 * np.sin(angle))  # bending radius
 
+def Momentum(q, B, r):
+    """
+    Calculate the particle momentum using the defleciton through the magnetic field
+    ---- Parameters ----
+    q           : Charge of the particle
+    B           : Magnetic field strength, get through geometry class
+    r           : Bending radius, calculate using BendinRadius()
+    --------------------
+    """
+    p = q * B * r
+    p = p * (3E8 / 1.6E-10) # convert to GeV/c
+    return abs(p)
 
 ### TEST CODE ###
-data = Master.data("out_1.root")
+
+data = Master.data("out_2a.root")
 geometry = Master.Geometry()
 
 hits_1 = data.DC1_Hits
 hits_2 = data.DC2_Hits
 
+hitX = np.array(hits_1.x)
+
 r = BendingRadius(hits_1, hits_2, geometry)
+p = Momentum(1.6E-19, geometry.B, r)
+print(np.mean(p))
