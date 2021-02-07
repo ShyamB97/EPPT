@@ -10,130 +10,108 @@ Main script, will act somewhat like an analyser module in lArsoft.
 
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
+from math import log10, floor
 
 import Master
 import Tracker
 
 
-### OUTDATED ###
-z = 5 + 5 + 0.3 - 0.3 # distance between Drift chambers
-B = 0.5 # magnetic field in Telsa
-q = 1.6E-19  # charge of the particle in Coulombs
-xPres = 1E-4  # precision of x Position in meters
-nEvents = 1000
-
-### OUTDATED ###
-def MomentumCalculation(hits1, hits2):
+def round_to(x, y):
     """
-    Calculates momentum by finding how much the particle bends in the magnetic field.
+    Rounds x to the 1st significant figure of y
+    """
+    return round(x, -int(floor(log10(abs(y)))))
+
+
+def GaussianFit(data):
+    """
+    Holds code for fitting gaussian curves to data.
     ---- Parameters ----
-    hits(i) : hits from ith drift chamber
-    x       : displacement along x due to the bending
-    l       : distance between last hit of hits1 nd first hit of hits2
-    r       : radius of delfeciton
-    p       : momentum, p = mv = qBr
-    sig_r   : uncertianty in r
-    sig_p   : uncertainty in p
-    --------------------
-    Makes use of global vairables (constants).
-    """
-    x = abs( (hits2[4] - hits1[4]) * xPres )
-    
-    l = np.sqrt( ( (hits2[0] - hits1[4]) * xPres )**2 + (9.6)**2 )
-    
-    r = np.sqrt( ((l**2) * z ) / (4 * abs(x) ) )
-    
-    p = q * B * r
-    
-    p = p * (3E8 / 1.6E-10) # convert to GeV/c
-
-    sig_r = RadiusUncertainty(x, l)
-    
-    sig_p = sig_r * (p/r)
-
-    return p, sig_p
-
-### OUTDATED ###
-def RadiusUncertainty(x, l, sig_x = xPres):
-    """
-    Calculates the uncertainty in defleciton redius r.
-    Only depends on the precision of x.
-    ---- Parameters ----
-    x       : see MomentumCalculation
-    l       : see MomentumCalculation
-    sig_x   : uncertainty in x (assumed)
+    y           : histogram bin heights = number of items in the bin
+    binEdges    : right edge values of the bins
+    x           : bin centers
+    x_width     : bin width
+    y_err       : 1sigma satistical errors per bin
+    popt        : optimised parameters from the fit
+    cov         : covariance matrix for the optimsed parameters
+    x_int       : interpolated values of x
+    y_int       : interpolated expected value of y i.e. value of y model predicts
     --------------------
     """
-    return sig_x * np.sqrt( (z/x) * ( ( 2*(l**2 - 9.6**2) + (1/16) * (l/x)**2 ) ) )  # see notes
+    y, binEdges = np.histogram(data, 50)
+    x = (binEdges[:-1] + binEdges[1:]) / 2
+    x_width = (x[-1] - x[0]) / len(x)
+    y_err = np.sqrt(y)  # items in a bin should follow the Poisson distribution
+
+    # calculate optimal fit parameters and covariance matrix using least squares method
+    popt, cov = curve_fit(Gaussian, x, y, [np.mean(data), np.std(data), 10])
+
+    # plot data
+    plt.bar(x, y, x_width, yerr=y_err, color="blue", edgecolor="black", capsize=3, ecolor="black")
+    
+    # plot gaussian fit
+    x_int = np.linspace(x[0], x[-1], 10*len(x))  # interpolate data
+    y_int = Gaussian(x_int, *popt)
+    plt.plot(x_int, y_int, label="Gaussian fit", color="red")    
+    
+    # plot options
+    plt.legend()
+    plt.xlabel("momentum (GeV)")
+    plt.ylabel("Number of events (bin width=" + str(round(x_width, 2)) + " GeV)")
+    plt.title("Beam momentum 100GeV, magnetic field " + str(geometry.B) + "T.")
+    
+    # print info
+    print("Mean (GeV) & " + str( round_to(popt[0], cov[0, 0]) ) + " $\pm$ " + str( round_to(cov[0, 0], cov[0, 0]) ) + " \\" )
+    print("Standard deviation (GeV) & " + str( round_to(popt[1], cov[1, 1]) ) + " $\pm$ " + str( round_to(cov[1, 1], cov[1, 1]) ) + " \\" )
+    print("Amplitude & " + str( round_to(popt[2], cov[2, 2]) ) + " $\pm$ " + str( round_to(cov[2, 2], cov[2, 2]) ) + " \\" )
+    
+    # return some results, mean, standard deviation, amplitude
+    return [popt[0], cov[0, 0]], [popt[1], cov[1, 1]], [popt[2], cov[2, 2]]
 
 
+def Gaussian(x, mu, sigma, a):
+    """
+    Gaussian function with modulated amplitude.
+    ---- Parameters ----
+    mu          : mean
+    sigma       : standrad deviation
+    a           : amputlide
+    --------------------
+    """
+    amplitude = a / ( sigma * np.sqrt(2 * np.pi) )
+    u = (x - mu) / sigma
+    return amplitude * np.exp( -0.5 * (u**2) )
 
+### MAIN CODE ###
 data = Master.data("out_1.root")
-geometry = Master.Geometry() # get detector geometry info
+sigma_x = 1E-4 # x precision
+geometry = Master.Geometry(0.5)
 
-# get drift chamber hits
-hits_1 = data.DC1_Hits
-hits_2 = data.DC2_Hits
+hits_1 = data.DC1_Hits # get the hits before the field
+hits_2 = data.DC2_Hits # get the hits after the field
 
-# calculate the particle momentum for each event
-r = Tracker.BendingRadius(hits_1, hits_2, geometry)
-p = Tracker.Momentum(1.6E-19, geometry.B, r)
-print(np.mean(p))
+traj_1 = Tracker.TrackDCTrajectory(hits_1, 1)
+traj_2 = Tracker.TrackDCTrajectory(hits_2, 2)
+dirs_1 = Tracker.TrackDirection(traj_1)
+dirs_2 = Tracker.TrackDirection(traj_2)
 
-cutoff = 1000 # momentum value to cutoff, likely due to poor tracking
-p = p[p < 1000]
+r = Tracker.BendingRadius(hits_1, hits_2, geometry) # compute the bending radius
+p = Tracker.Momentum(1, geometry.B, r) # get the momentum distribution of the events
 
-plt.hist(p, bins=50)
+mag_1 = np.sum(traj_1**2, axis=1)
+mag_2 = np.sum(traj_2**2, axis=1)
 
+angle = Tracker.BendingAngle(dirs_1, dirs_2)
 
+res = (p / angle) * sigma_x * np.sqrt( (1 / mag_1) + (1 / mag_2) )
+avgRes = np.mean(res)
+errRes = np.sqrt(np.std(res))
 
-"""
-momenta = []
-resolution = []
-for i in range(nEvents):
-    p, sig_p = MomentumCalculation(d.DC1_Hits.x[i] , d.DC2_Hits.x[i])
-    momenta.append(p)
-    resolution.append(sig_p)
+#p = p[p > 10]  # remove signifcant outliers, likely due to innacruate tacking or small angle approximation failing
 
-bins, patches, _ = plt.hist(momenta, 100)
-binWidth = (patches[-1] - patches[0]) / len(patches)
-plt.xlabel("Momentum (GeV)")
-plt.ylabel("Frequency (bin width:" + str(round(binWidth, 2)) + " GeV)")
-plt.title("Beam momentum 200 GeV, B field " + str(B) + "T")
+p = p[p < 120]
+p = p[p > 80]
 
-
-# Some values of Resolution are very large, so cut them from the plot for convience.
-resPlot = []
-for i in range(len(resolution)):
-    if(resolution[i] < 100):
-        resPlot.append(resolution[i])
-
-#plt.hist(resPlot, 100)
-
-
-print("mean Momentum (GeV): " + str(np.mean(momenta)) + " +- " + str(np.std(momenta)/nEvents) )
-print("mean Resolution (GeV): " + str(np.mean(resolution)) + " +- " + str(np.std(resolution)/nEvents) )
-"""
-
-"""
-DepositedEnergy = (HC_Energy + EC_Energy) / 1000 # GeV
-
-muon_Mass = 0.105 # GeV
-
-momentaFromCalorimeter = np.sqrt(DepositedEnergy**2 - muon_Mass**2)
-
-bins, patches, _ = plt.hist(DepositedEnergy, 100)
-binWidth = (patches[-1] - patches[0]) / len(patches)
-plt.xlabel("Deposited energy (GeV)")
-plt.ylabel("Frequency (bin width:" + str(round(binWidth, 2)) + " GeV)")
-
-"""
-"""
-y, binEdges = np.histogram(momenta, 50)
-
-binCenters = 0.5*(binEdges[1:]+binEdges[:-1])
-
-yerr, _ = np.histogram(momenta, 50, weights=resolution)
-
-plt.bar(binCenters, y, width=1, yerr=yerr)
-"""
+GaussianFit(p) # perform a gaussian fit to the distribution
+print("Average momentum resolution (GeV) & " + str(round_to(avgRes, errRes)) + " $\pm$ " + str(round_to(errRes, errRes)) + " \\" )

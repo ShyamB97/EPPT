@@ -38,67 +38,62 @@ def HitVisualiser(hits, n):
 
     plt.show()
 
-def TrackDirection(hits, dc):
+
+def TrackDCTrajectory(hits, dc):
     """
-    Returns the direction vector (2D) of the hits for either drift chamber.
+    Returns the (2D) trajectories of the hits for either drift chamber.
     ---- Parameters ----
     hits    : hits from drift chamber
     dc      : drift chamber number, 1 or 2
     start   : first wire
     end     : last wire
-    reverse : if dc is 2, then the dirction needs to be reversed
-    norm    : direcion vector for each event
     dist    : diplacement between the relevant hits
+    _list   : np array of trajectories 
     --------------------
-    """
-
+    """  
     # change functionalitly depending on which drift chamber hits are used
     if dc == 1:
         start = 0
         end = 1
-        reverse = 1
     elif dc == 2:
         start = 3
         end = 4
-        reverse = -1
 
-    norms = []
+    _list = []
     for i in range(len(hits.x)):
         x = hits.x[i]
         z = hits.z[i]
         
         dist = np.array([x[end] - x[start], z[end] - z[start]])
-        norm = (1 / np.sqrt( np.sum(dist**2) )) * dist
-        norms.append(norm)
+        _list.append(dist)
+    # format data in a better way
+    _list = np.array(_list)
+    return _list.reshape(len(_list), 2)
 
-    return reverse * np.array(norms)
-
-
-def ArcPointX(hits, dirs, dist, xWidth, dc):
+def TrackDirection(traj):
     """
-    Gets the start or end of the arc depending on the drift chamber number.
+    Returns the direction vector (2D) of the hits for either drift chamber.
     ---- Parameters ----
-    hits    : hits from drift chamber
-    dirs    : hit direciton (2D)
-    dist    : distance from drift chamber to magnet
-    xWidth  : size of the x wire plane
-    dc      : drift chamber number, 1 or 2
-    point   : if dc is 2, then the dirction needs to be reversed
-    h       : x distancde from center of the geometry
+    traj    : 2D trajectories
+    mag     : length of trajectories
+    _dir    : direcion vector for each event
     --------------------
     """
-
-    # change functionalitly depending on which drift chamber hits are used
-    if dc == 1:
-        point = 4
-    elif dc == 2:
-        point = 0
     
-    h = []
-    for i in range(len(dirs)):
-        x = hits.x[i]
-        h.append((dirs[i][0] * dist) + (xWidth/2) * x[point])
-    return np.array(h)
+    mag = 1 / np.sqrt(np.sum(traj**2, axis=1))
+
+    return np.multiply(traj, mag[:, np.newaxis])
+
+
+def BendingAngle(dirs_1, dirs_2):
+    """
+    Calclulte the change in angle of the particle trajectory.
+    ---- Parameters ----
+    dirs_1    : direction vector before magnet
+    dirs_2    : direction vector after magnet
+    --------------------
+    """
+    return abs(dirs_2[:, 0] - dirs_1[:, 0])
 
 
 def BendingRadius(hits_1, hits_2, geometry):
@@ -107,62 +102,39 @@ def BendingRadius(hits_1, hits_2, geometry):
     Used for calculaing the particle momentum.
     ---- Parameters ----
     hits_1      : hits from drift chamber 1
-    hits_1      : hits from drift chamber 2
+    hits_2      : hits from drift chamber 2
     geometry    : class holding detector geometry
-    l           : distance from drift chamber to magnet
-    d_1         : distance from last wire to the start of magnet
-    d_2         : distance from first wire to start of magnet
+    l           : length of the magnet
     dirs_1      : direction vector (2D) of drift chamber 1 hits
     dirs_2      : direction vector (2D) of drift chamber 2 hits
-    h_1         : x displacement of particle before entering the magnetic field
-    h_1         : x displacement of particle after exiting the magnet field
     angle       : deflection angle
-    arcDist     : shortest path between the start and end of the curved trajectory 
     --------------------
     """
 
-    l = geometry.MagnetSize.z # length of magnet along z
-    d_1 = abs(geometry.DC1Pos.z) - l/2 - geometry.DC1Size.z/2
-    d_2 = abs(geometry.DC2Pos.z) - l/2 - geometry.DC2Size.z/2
+    l = geometry.MagnetSize.z
 
-    dirs_1 = TrackDirection(hits_1, 1)
-    dirs_2 = TrackDirection(hits_2, 2)
+    # get trajectories for eahc track
+    traj_1 = TrackDCTrajectory(hits_1, 1)
+    traj_2 = TrackDCTrajectory(hits_2, 2)
 
+    # get direction vectors
+    dirs_1 = TrackDirection(traj_1)
+    dirs_2 = TrackDirection(traj_2)
 
-    h_1 = ArcPointX(hits_1, dirs_1, d_1, geometry.wirePlane1Size.x, 1)
-    h_2 = ArcPointX(hits_2, dirs_2, d_2, geometry.wirePlane2Size.x, 2)
+    # get the angle using the small angle approximation
+    angle = BendingAngle(dirs_1, dirs_2)
+    
+    return l / angle
 
-    dirs_1 = dirs_1.reshape(len(dirs_1), 2)
-    dirs_2 = dirs_2.reshape(len(dirs_2), 2)
-
-    angle = ( np.arcsin( dirs_2[:, 0] ) - np.arcsin( dirs_1[:, 0] ) ) * 180 / np.pi # deflection angle
-    arcDist = np.sqrt( l**2 + (h_2 - h_1)**2 ) # shortest path between the arc points
-
-    return arcDist / (2 * np.sin(angle))  # bending radius
 
 def Momentum(q, B, r):
     """
     Calculate the particle momentum using the defleciton through the magnetic field
     ---- Parameters ----
-    q           : Charge of the particle
+    q           : Charge of the particle in quantum units (q = 1 for antimuons)
     B           : Magnetic field strength, get through geometry class
     r           : Bending radius, calculate using BendinRadius()
     --------------------
     """
-    p = q * B * r
-    p = p * (3E8 / 1.6E-10) # convert to GeV/c
-    return abs(p)
-
-### TEST CODE ###
-
-data = Master.data("out_2a.root")
-geometry = Master.Geometry()
-
-hits_1 = data.DC1_Hits
-hits_2 = data.DC2_Hits
-
-hitX = np.array(hits_1.x)
-
-r = BendingRadius(hits_1, hits_2, geometry)
-p = Momentum(1.6E-19, geometry.B, r)
-print(np.mean(p))
+    # 0.3 = (1.6e-19 / 1.6e-10) * 3e8
+    return 0.3 * q * B * r

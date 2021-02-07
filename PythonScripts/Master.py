@@ -50,7 +50,7 @@ class Geometry:
 
         # World Space = [10, 3, 10]
 
-        Geometry.MagnetSize = Vector3(*[1, 1, 1]) # Magnet is a cube
+        Geometry.MagnetSize = Vector3(*[2, 2, 2]) # Magnet is a cube
         self.B = B # in T, this will change
 
         Geometry.MagnetPos = Vector3(*[0, 0, 0]) # manget is at the geomoetry origin
@@ -107,12 +107,12 @@ class data:
         data.EVector_EM = tree.arrays(library="np")['ECEnergyVector']
         data.EVector_Hadron = tree.arrays(library="np")['HCEnergyVector']
     
-        data.DC1_Hits = Vector3(tree.arrays(library="np")['Dc1HitsVector_x'], 
-                           tree.arrays(library="np")['Dc1HitsVector_y'], 
-                           tree.arrays(library="np")['Dc1HitsVector_z'])
+        data.DC1_Hits = Vector3(tree.arrays(library="np")['Dc1HitsVector_x'] / 1000, 
+                           tree.arrays(library="np")['Dc1HitsVector_y'] / 1000, 
+                           (tree.arrays(library="np")['Dc1HitsVector_z'] + 1) * 0.5)
     
-        data.DC2_Hits = Vector3(tree.arrays(library="np")['Dc2HitsVector_x'], 
-                           tree.arrays(library="np")['Dc2HitsVector_y'], 
-                           tree.arrays(library="np")['Dc2HitsVector_z'])
+        data.DC2_Hits = Vector3(tree.arrays(library="np")['Dc2HitsVector_x'] / 1000, 
+                           tree.arrays(library="np")['Dc2HitsVector_y'] / 1000, 
+                           (tree.arrays(library="np")['Dc2HitsVector_z'] + 1) * 0.5)
 
 
