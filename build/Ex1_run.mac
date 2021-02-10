@@ -24,7 +24,7 @@
 #
 /B5/detector/armAngle 0. deg
 /gun/particle mu+
-/B5/generator/momentum 200. GeV
+/B5/generator/momentum 100. GeV
 /B5/field/value 0.5 tesla
-/analysis/setFileName out_3b
+/analysis/setFileName out_4
 /run/beamOn 1000

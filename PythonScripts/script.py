@@ -62,10 +62,10 @@ def GaussianFit(data):
     plt.title("Beam momentum 100GeV, magnetic field " + str(geometry.B) + "T.")
     
     # print info
-    print("Mean (GeV) & " + str( round_to(popt[0], cov[0, 0]) ) + " $\pm$ " + str( round_to(cov[0, 0], cov[0, 0]) ) + " \\" )
-    print("Standard deviation (GeV) & " + str( round_to(popt[1], cov[1, 1]) ) + " $\pm$ " + str( round_to(cov[1, 1], cov[1, 1]) ) + " \\" )
-    print("Amplitude & " + str( round_to(popt[2], cov[2, 2]) ) + " $\pm$ " + str( round_to(cov[2, 2], cov[2, 2]) ) + " \\" )
-    
+    print("Mean (GeV) & " + str( round_to(popt[0], cov[0, 0]) ) + " $\pm$ " + str( round_to(cov[0, 0], cov[0, 0]) ) + r" \\" )
+    print("Standard deviation (GeV) & " + str( round_to(popt[1], cov[1, 1]) ) + " $\pm$ " + str( round_to(cov[1, 1], cov[1, 1]) ) + r" \\" )
+    #print("Amplitude & " + str( round_to(popt[2], cov[2, 2]) ) + " $\pm$ " + str( round_to(cov[2, 2], cov[2, 2]) ) + r" \\"  )
+    print("Amplitude & " + str( popt[2]) + " $\pm$ " + str( cov[2, 2]) + r" \\"  )
     # return some results, mean, standard deviation, amplitude
     return [popt[0], cov[0, 0]], [popt[1], cov[1, 1]], [popt[2], cov[2, 2]]
 
@@ -84,7 +84,7 @@ def Gaussian(x, mu, sigma, a):
     return amplitude * np.exp( -0.5 * (u**2) )
 
 ### MAIN CODE ###
-data = Master.data("out_1.root")
+data = Master.data("out_4.root")
 sigma_x = 1E-4 # x precision
 geometry = Master.Geometry(0.5)
 
@@ -108,10 +108,10 @@ res = (p / angle) * sigma_x * np.sqrt( (1 / mag_1) + (1 / mag_2) )
 avgRes = np.mean(res)
 errRes = np.sqrt(np.std(res))
 
-#p = p[p > 10]  # remove signifcant outliers, likely due to innacruate tacking or small angle approximation failing
+p = p[p > 0]  # remove signifcant outliers, likely due to innacruate tacking or small angle approximation failing
 
-p = p[p < 120]
-p = p[p > 80]
+#p = p[p < 120]
+#p = p[p > 80]
 
 GaussianFit(p) # perform a gaussian fit to the distribution
-print("Average momentum resolution (GeV) & " + str(round_to(avgRes, errRes)) + " $\pm$ " + str(round_to(errRes, errRes)) + " \\" )
+print("Average momentum resolution (GeV) & " + str(round_to(avgRes, errRes)) + " $\pm$ " + str(round_to(errRes, errRes)) + r" \\" )
