@@ -83,6 +83,7 @@ def Gaussian(x, mu, sigma, a):
     u = (x - mu) / sigma
     return amplitude * np.exp( -0.5 * (u**2) )
 
+
 ### MAIN CODE ###
 data = Master.data("out_4.root")
 sigma_x = 1E-4 # x precision

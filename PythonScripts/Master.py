@@ -24,6 +24,20 @@ class Vector3:
         return Vector3(0, 0, 0)
 
 
+class Material:
+    """
+    Class to hold material data for the detector
+    """
+    def __init__(self, Z, A, N_A, rho, X0, I):
+        self.Z = Z # proton number
+        self.A = A # atomic number
+        self.N_A = N_A # molar mass/Avagadro's number g/mole
+        self.rho = rho # density gm^-3 -> 1000 kgm^-3
+        self.X0 = X0 # radiation length m
+        self.I = I # mean excitation potential eV
+
+
+
 class Geometry:
     """
     Class holding Detector Geometry and properties (such as magnetic field strangth)
@@ -43,7 +57,10 @@ class Geometry:
     
     wirePlane1Size = Vector3.Zero()
     wirePlane2Size = Vector3.Zero()
-    
+
+    # detector materials
+    CsI = Material(55+53, 133+127, 259.809, 4.51, 1.860E-2, 553.1)
+    Pb = Material(82, 207, 207.217, 11.350, 5.613E-3, 823)
     
     def __init__(self, B=1):
         # Detector Properties units in m. Adding what I need at the time.
@@ -72,10 +89,9 @@ class Geometry:
         Geometry.wirePlane1Size = Vector3(*[1, 0.3, 1E-4])
         Geometry.wirePlane2Size = Vector3(*[1.5, 0.3, 1E-4])
 
-
 class data:
     """
-    Gets data from the root file.
+    Gets data from the root file. Positions in m and Energy in GeV
     ---- Parameters ----
     name            : ROOT file name
     E_Hadron        : Total deposited Energy from the Hadronic calorimeter
@@ -101,12 +117,12 @@ class data:
         tree = file['B5'] # access B5 directory        
 
         ### Retrieve Data ###
-        data.E_EM = tree.arrays(library="np")['ECEnergy']
-        data.E_Hadron = tree.arrays(library="np")['HCEnergy']
+        data.E_EM = tree.arrays(library="np")['ECEnergy'] / 1000
+        data.E_Hadron = tree.arrays(library="np")['HCEnergy'] / 1000
         
-        data.EVector_EM = tree.arrays(library="np")['ECEnergyVector']
-        data.EVector_Hadron = tree.arrays(library="np")['HCEnergyVector']
-    
+        data.EVector_EM = tree.arrays(library="np")['ECEnergyVector'] / 1000
+        data.EVector_Hadron = tree.arrays(library="np")['HCEnergyVector'] / 1000
+
         data.DC1_Hits = Vector3(tree.arrays(library="np")['Dc1HitsVector_x'] / 1000, 
                            tree.arrays(library="np")['Dc1HitsVector_y'] / 1000, 
                            (tree.arrays(library="np")['Dc1HitsVector_z'] + 1) * 0.5)
