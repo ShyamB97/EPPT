@@ -26,5 +26,5 @@
 /gun/particle mu+
 /B5/generator/momentum 100. GeV
 /B5/field/value 0.5 tesla
-/analysis/setFileName out_4
+/analysis/setFileName out_4b
 /run/beamOn 1000

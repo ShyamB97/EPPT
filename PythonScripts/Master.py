@@ -59,7 +59,7 @@ class Geometry:
     wirePlane2Size = Vector3.Zero()
 
     # detector materials
-    CsI = Material(55+53, 133+127, 259.809, 4.51, 1.860E-2, 553.1)
+    CsI = Material(54, 133+127, 259.809, 4.51, 1.860E-2, 553.1) # Z is an average of Cs and I
     Pb = Material(82, 207, 207.217, 11.350, 5.613E-3, 823)
     
     def __init__(self, B=1):

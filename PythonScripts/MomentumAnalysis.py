@@ -85,7 +85,7 @@ def Gaussian(x, mu, sigma, a):
 
 
 ### MAIN CODE ###
-data = Master.data("out_4.root")
+data = Master.data("out_4b.root")
 sigma_x = 1E-4 # x precision
 geometry = Master.Geometry(0.5)
 
